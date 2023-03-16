@@ -1,12 +1,15 @@
+import { Fragment } from "react";
 import Header from "./Components/Header/Header";
-import RestrauntSummary from "./Components/RestrauntSummary/RestrauntSummary";
+import Meals from "./Components/RestrauntSummary/Meals";
 
 function App() {
   return (
-    <div>
+    <Fragment>
       <Header />
-      <RestrauntSummary />
-    </div>
+      <main>
+        <Meals/>
+      </main>
+    </Fragment>
   );
 }
 
