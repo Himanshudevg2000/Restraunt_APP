@@ -3,6 +3,13 @@
     margin: 0;
     padding: 0;
   }
+
+  .cart-items li{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
   
   .total {
     display: flex;
@@ -41,4 +48,9 @@
   .actions .button {
     background-color: #8a2b06;
     color: white;
+  }
+
+  .cartAddedItems{
+    padding: 0.2rem;
+    background-color: #5a1a01;
   }
