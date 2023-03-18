@@ -12,7 +12,9 @@ const CartProvider = (props) => {
     console.log('Inside addItemToCartHandler',cartContext)
   };
 
-  const removeItemFromCartHandler = (id) => {};
+  const removeItemFromCartHandler = (id) => {
+    updateItems([...id,id-1])
+  };
 
   const cartContext = {
     items: items,

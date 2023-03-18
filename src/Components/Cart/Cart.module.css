@@ -6,9 +6,9 @@
 
   .cart-items li{
     padding: 10px;
-    font-weight: bold;
     font-size: 1rem;
     margin: 1rem 0;
+    border-bottom: 1px solid rgb(154, 144, 144);
   }
   
   .total {
@@ -54,3 +54,53 @@
     padding: 0.2rem;
     background-color: #5a1a01;
   }
+
+  .stylename{
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .styleprice{
+    color: #8a2b06;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .cart-items li span{
+    display: block;
+  }
+
+  .decrease{
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* background-color: red; */
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+  .increase{
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #ab451d;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+  .increase:hover{
+    font-weight: bold;
+    background-color: #8c553f;
+  }
+  .decrease:hover{
+    font-weight: bold;
+    background-color: red;
+  }
+
+  /* .btnpostion{
+    position: fixed;
+    top: 20%;
+    right: 10%;
+  } */

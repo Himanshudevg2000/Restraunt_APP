@@ -7,16 +7,16 @@ const Cart = (props)=> {
 
     const cartCtx = useContext(CartContext);
 
-    const cartItems = ( 
-    <ul className={classes['cart-items']}>  
-    {cartCtx.items.map((item)=> (<li>Name:{item.name} Description:{item.description} Price:{item.price} Quantity:{item.quantity}</li>))}
-    </ul>)
-    
     let price = 0;
     cartCtx.items.forEach(item => {
         price = price + Number(item.price);
         price = Math.round((price + Number.EPSILON) *100)/100
     })
+
+    const cartItems = ( 
+    <ul className={classes['cart-items']}>  
+    {cartCtx.items.map((item)=> (<li> <span className={classes.stylename}>{item.name}</span> <span className={classes.styleprice}>{item.price}</span> <span>quantity--{item.quantity}</span> <button className={classes.decrease}>-</button> <button className={classes.increase}>+</button> </li>))}
+    </ul>)
 
     return (
         <Modal onHideCart={props.onHideCart}>
